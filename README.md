@@ -8,8 +8,8 @@ This project runs a set of tests to confirm that the planner works.
 
 ## Getting started
 
-- To install the virtual machine environment, you will install Git, Virtual Box and Vagrant. Detailed installation instructions can be found here: https://www.udacity.com/wiki/ud197/install-vagrant
-
+To set up the project
+- install Git, Virtual Box and Vagrant. Detailed installation instructions can be found here: https://www.udacity.com/wiki/ud197/install-vagrant
 - Download this tournament repository and place it in your /vagrant directory.
 
 In your terminal, run the following commands:
