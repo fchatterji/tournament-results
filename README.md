@@ -25,16 +25,16 @@ In your terminal, run the following commands:
 
 Results: The test results should be as show below:
 
-Events can be deleted.
-Old matches can be deleted.
-Player records can be deleted.
-After deleting, countPlayers() returns zero.
-After registering a player, countPlayers() returns 1.
-Players can be registered and deleted.
-Newly registered players appear in the standings with no matches.
-After a match, players have updated standings.
-After one match, players with one win are paired.
-Success! All tests pass!
+- Events can be deleted.
+- Old matches can be deleted.
+- Player records can be deleted.
+- After deleting, countPlayers() returns zero.
+- After registering a player, countPlayers() returns 1.
+- Players can be registered and deleted.
+- Newly registered players appear in the standings with no matches.
+- After a match, players have updated standings.
+- After one match, players with one win are paired.
+- Success! All tests pass!
 
 ## Copyright
 
