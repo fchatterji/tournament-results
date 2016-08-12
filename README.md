@@ -12,6 +12,8 @@ To set up the project
 - install Git, Virtual Box and Vagrant. Detailed installation instructions can be found here: https://www.udacity.com/wiki/ud197/install-vagrant
 - Download this tournament repository and place it in your /vagrant directory.
 
+## Run the project 
+
 In your terminal, run the following commands:
 - cd /path/to/vagrant (changes directories to the 'vagrant' directory).
 - vagrant up (starts the virtual machine).
@@ -21,9 +23,10 @@ In your terminal, run the following commands:
 - \i tournament.sql (this command reads in the sql commands from 'tournament.sql' which will create the 'tournaments' database and the necessary tables and views needed by the application).
 - \q (to quit the PostgreSQL interactive terminal).
 - python tournament_test_extra.py (this runs the python tests against the tournament.py module.
-- 
 
-Results: The test results should be as show below:
+## Results
+
+The test results should be as show below:
 
 - Events can be deleted.
 - Old matches can be deleted.
