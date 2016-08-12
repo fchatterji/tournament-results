@@ -49,15 +49,3 @@ CREATE VIEW v_standings as
         FROM v_players_wins LEFT JOIN v_players_losses
         ON v_players_wins.id = v_players_losses.id
         ORDER BY wins DESC;
-
-
-INSERT INTO players(name) values ('joe');
-INSERT INTO players(name) values ('ian');
-INSERT INTO players(name) values ('alfred');
-INSERT INTO players(name) values ('gustav');
-INSERT INTO players(name) values ('jill');
-
-INSERT INTO matches(winner_id, loser_id) values (1, 2);
-INSERT INTO matches(winner_id, loser_id) values (3, 4);
-INSERT INTO matches(winner_id, loser_id) values (1, 3);
-INSERT INTO matches(winner_id, loser_id) values (4, 2);
