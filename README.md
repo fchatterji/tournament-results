@@ -4,36 +4,37 @@
 
 A simple swiss tournament planner, composed of a database to store the game matches between players and code to query this data and determine the winners of various games.
 
+This project runs a set of tests to confirm that the planner works.
+
 ## Getting started
 
-Install virtual machine
-Install vagrant
+- To install the virtual machine environment, you will install Git, Virtual Box and Vagrant. Detailed installation instructions can be found here: https://www.udacity.com/wiki/ud197/install-vagrant
 
-Clone the github repo
+- Download this tournament repository and place it in your /vagrant directory.
 
-cd into \src
+In your terminal, run the following commands:
+- cd /path/to/vagrant (changes directories to the 'vagrant' directory).
+- vagrant up (starts the virtual machine).
+- vagrant ssh (creates a remote connection to your virtual machine).
+- cd /vagrant/tournament (changes directories to the 'tournament' directory in your virtual machine).
+- psql (launches the PostgreSQL interactive terminal).
+- \i tournament.sql (this command reads in the sql commands from 'tournament.sql' which will create the 'tournaments' database and the necessary tables and views needed by the application).
+- \q (to quit the PostgreSQL interactive terminal).
+- python tournament_test_extra.py (this runs the python tests against the tournament.py module.
+- 
 
-To see the website in your browser
+Results: The test results should be as show below:
 
-Go to https://round-centaur-138323.appspot.com/blog/
-
-To deploy it locally
-
-- Clone this repository
-- Install google app engine, using the python standard environment (more info: https://cloud.google.com/appengine/docs/python/)
-- Follow the instructions to launch a local version of the website
-
-## Libraries used
-
-The website is built using the python standard environment of google app engine.
-Webapp2 is the framework used for this project. 
-
-Additionnal libraries and ressources used include:
-- tinyMCE: https://www.tinymce.com/
-- bootstrap: http://getbootstrap.com/
-- jquery: http://jquery.com/
-- bootstrap blog theme: https://startbootstrap.com/template-overviews/blog-post/
-- glyphicons: http://glyphicons.com/
+Events can be deleted.
+Old matches can be deleted.
+Player records can be deleted.
+After deleting, countPlayers() returns zero.
+After registering a player, countPlayers() returns 1.
+Players can be registered and deleted.
+Newly registered players appear in the standings with no matches.
+After a match, players have updated standings.
+After one match, players with one win are paired.
+Success! All tests pass!
 
 ## Copyright
 
