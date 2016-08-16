@@ -22,7 +22,7 @@ In your terminal, run the following commands:
 - psql (launches the PostgreSQL interactive terminal).
 - \i tournament.sql (this command reads in the sql commands from 'tournament.sql' which will create the 'tournaments' database and the necessary tables and views needed by the application).
 - \q (to quit the PostgreSQL interactive terminal).
-- python tournament_test_extra.py (this runs the python tests against the tournament.py module.
+- python tournament_test.py (this runs the python tests against the tournament.py module.
 
 ## Results
 
